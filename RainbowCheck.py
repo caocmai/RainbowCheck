@@ -34,6 +34,21 @@ def user_input(prompt):
     user_input = input(prompt)
     return user_input
 
+def test():
+    create("purple sox")
+    create("red cloak")
+
+    print(read(0))
+    print(read(1))
+
+    update(0, "purple socks")
+    destroy(1)
+
+    print(read(0))
+    # print(read(1)) # This line is source of error b/c tryingt to
+                    # access the NON-EXISTANCE 2nd item
+    list_all_items()
+
 # User input
 # function_code = input("Please Enter a value:")
 # print(function_code)
